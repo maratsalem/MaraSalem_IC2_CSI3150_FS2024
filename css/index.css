@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif, Tahoma;
+}
+
+body {
+  border-style: double;
+  border-color: #ff8c00;
+  border-radius: 5px;
+  height: 100vh;
+  width: 100vw;
+}
+
+header {
+  padding: 20px;
+  text-align: center;
+  font-size: 2rem;
+  border-style: double;
+  border-color: #ff8c00;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+header h1 {
+  font-size: 2rem;
+  border-style: double;
+  border-color: #ff8c00;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+main h2 {
+  text-align: center;
+  margin: 10px 0;
+  font-size: 1.5rem;
+  border-style: double;
+  border-color: #ff8c00;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 20px;
+}
+
+.image-container .alpha {
+  text-align: center;
+}
+
+.image-container .alpha .image-result {
+  margin-bottom: 10px;
+  border-style: double;
+  border-color: #ff8c00;
+  border-radius: 5px;
+  width: 500px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  visibility: hidden;
+}
+
+.image-container .alpha .image-result img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.image-container .alpha button {
+  padding: 10px 20px;
+  width: 250px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  border-color: transparent;
+  margin-top: 10px;
+}
+
+.image-container .alpha .image-result .hide-btn-a,
+.image-container .alpha .image-result .hide-btn-b,
+.image-container .alpha .image-result .hide-btn-c {
+  background-color: #128dbe;
+  color: #000000;
+  transition: background-color 0.3s;
+  margin-bottom: 10px;
+}
+
+.image-container .alpha .image-result .hide-btn-a:hover,
+.image-container .alpha .image-result .hide-btn-b:hover,
+.image-container .alpha .image-result .hide-btn-c:hover {
+  background-color: #adf5ff;
+}
+
+.image-container .alpha .reveal-a,
+.image-container .alpha .reveal-b,
+.image-container .alpha .reveal-c {
+  background-color: #03a755;
+  color: #000000;
+  transition: background-color 0.3s;
+  margin-bottom: 10px;
+}
+
+.image-container .alpha .reveal-a:hover,
+.image-container .alpha .reveal-b:hover,
+.image-container .alpha .reveal-c:hover {
+  background-color: #aff8b0;
+}
